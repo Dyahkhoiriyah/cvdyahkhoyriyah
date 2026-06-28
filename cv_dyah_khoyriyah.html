@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dyah Khoyriyah | Marketing Communication & Digital Marketing</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        // Custom colors matching the blazer in the photo (Magenta/Pink)
+                        brand: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            500: '#db2777',
+                            600: '#be185d', // Primary match
+                            700: '#9d174d',
+                            900: '#831843',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+        }
+        .blob-bg {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fce7f3' d='M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,95.5,-3.1C94.2,11.8,85.6,26.2,75.4,38.8C65.2,51.4,53.4,62.2,40.1,70.5C26.8,78.8,12.1,84.6,-2.4,88.7C-16.9,92.8,-32.1,87.6,-45.1,79C-58.1,70.4,-68.9,58.4,-77.2,44.9C-85.5,31.4,-91.3,16.4,-91.1,1.5C-90.9,-13.4,-84.7,-28.3,-75.7,-40.8C-66.7,-53.3,-54.9,-63.4,-41.7,-71.1C-28.5,-78.8,-14.2,-84,0.6,-85.1C15.4,-86.2,30.5,-83.6,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-40 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-brand-600 tracking-tighter">Dyah<span class="text-gray-800">.</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Tentang</a>
+                    <a href="#keahlian" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Keahlian</a>
+                    <a href="#pengalaman" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Pengalaman</a>
+                    <a href="#kontak" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Kontak</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full z-40">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="#beranda" class="text-gray-600 hover:text-brand-600 hover:bg-gray-50 block px-3 py-2 rounded-md font-medium">Beranda</a>
+                <a href="#tentang" class="text-gray-600 hover:text-brand-600 hover:bg-gray-50 block px-3 py-2 rounded-md font-medium">Tentang</a>
+                <a href="#keahlian" class="text-gray-600 hover:text-brand-600 hover:bg-gray-50 block px-3 py-2 rounded-md font-medium">Keahlian</a>
+                <a href="#pengalaman" class="text-gray-600 hover:text-brand-600 hover:bg-gray-50 block px-3 py-2 rounded-md font-medium">Pengalaman</a>
+                <a href="#kontak" class="text-gray-600 hover:text-brand-600 hover:bg-gray-50 block px-3 py-2 rounded-md font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1 text-center lg:text-left z-10">
+                    <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 font-semibold text-sm mb-4">
+                        Tersedia untuk peluang baru
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Halo, Saya <br/>
+                        <span class="text-brand-600">Dyah Khoyriyah</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl font-medium text-gray-600 mb-6">
+                        Marketing Communication & <br class="hidden lg:block"/>Digital Marketing Specialist
+                    </h2>
+                    <p class="text-gray-500 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+                        Membantu perusahaan properti membangun citra merek yang kuat, menjangkau audiens yang tepat, dan meningkatkan penjualan melalui strategi komunikasi dan digital yang terpadu.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#kontak" class="px-8 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            Hubungi Saya
+                        </a>
+                        <a href="#pengalaman" class="px-8 py-3 bg-white border-2 border-gray-200 hover:border-brand-600 hover:text-brand-600 text-gray-700 font-medium rounded-full transition-all duration-300 text-center">
+                            Lihat Portofolio
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="mt-10 flex items-center justify-center lg:justify-start space-x-5 text-gray-400">
+                        <a href="#" class="hover:text-brand-600 transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-brand-600 transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:dyah.khoyriyah@email.com" class="hover:text-brand-600 transition-colors text-2xl"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="order-1 lg:order-2 relative flex justify-center lg:justify-end">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <div class="blob-bg"></div>
+                        <img 
+                            src="ChatGPT Image Jun 28, 2026, 08_16_47 PM.png" 
+                            alt="Dyah Khoyriyah Profile" 
+                            class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl transition-transform hover:scale-105 duration-500"
+                            style="object-position: center top;"
+                        >
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-4 -left-4 sm:bottom-10 sm:-left-10 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium">Spesialisasi</p>
+                                <p class="text-sm font-bold text-gray-800">Industri Properti</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 relative">
+                    <div class="w-full h-full bg-brand-50 rounded-3xl p-8 text-center relative overflow-hidden">
+                        <i class="fas fa-quote-left text-6xl text-brand-100 absolute top-4 left-4"></i>
+                        <p class="text-lg font-medium text-gray-700 italic relative z-10 mt-6 mb-4">
+                            "Komunikasi yang baik bukan hanya tentang apa yang kita katakan, tetapi bagaimana kita membuat pelanggan merasa terhubung dengan nilai dan kenyamanan dari properti yang kita tawarkan."
+                        </p>
+                        <h4 class="font-bold text-brand-600">- Dyah Khoyriyah</h4>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <h3 class="text-sm font-bold text-brand-600 uppercase tracking-widest mb-2">Tentang Saya</h3>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Menggabungkan Kreativitas dan Data dalam Pemasaran Properti</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Sebagai seorang profesional Marketing Communication, saya memiliki gairah yang kuat dalam merancang narasi merek dan membangun hubungan yang bermakna antara perusahaan dan pelanggan. Pengalaman utama saya berfokus pada industri properti, di mana kepercayaan dan citra adalah kunci kesuksesan.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Menyadari pentingnya adaptasi di era digital, saya telah memperluas keahlian saya ke ranah <strong>Digital Marketing</strong>. Saya mengintegrasikan event promosi tatap muka dengan kampanye iklan digital yang terukur (Meta Ads & Google Ads), optimasi konten, dan strategi media sosial untuk menghasilkan <em>lead</em> potensial bagi proyek perumahan dan komersial.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
+                        <div>
+                            <p class="text-3xl font-bold text-brand-600 mb-1">3+</p>
+                            <p class="text-sm text-gray-500">Tahun Pengalaman</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-brand-600 mb-1">20+</p>
+                            <p class="text-sm text-gray-500">Kampanye Sukses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keahlian" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-sm font-bold text-brand-600 uppercase tracking-widest mb-2">Keahlian</h3>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Kompetensi Profesional</h2>
+                <p class="text-gray-600">Perpaduan strategis antara kemampuan komunikasi tradisional (Marcomm) dan teknik eksekusi digital modern untuk penetrasi pasar yang maksimal.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Marcom Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 text-2xl mb-6">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Marketing Communication</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Public Relations</h4>
+                                <p class="text-sm text-gray-500">Membangun dan menjaga citra positif perusahaan properti di mata publik, investor, dan media massa.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Event Management</h4>
+                                <p class="text-sm text-gray-500">Mengorganisir pameran properti, open house, dan acara peluncuran proyek (Product Launching) yang memukau.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Brand Strategy</h4>
+                                <p class="text-sm text-gray-500">Merancang identitas visual, *positioning*, dan pesan komunikasi utama untuk produk perumahan.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Digital Marketing Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 text-2xl mb-6">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Marketing</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Digital Ads & Lead Gen</h4>
+                                <p class="text-sm text-gray-500">Menjalankan kampanye Meta Ads & Google Ads yang ditargetkan tajam untuk menjaring database calon pembeli (Leads).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Social Media Management</h4>
+                                <p class="text-sm text-gray-500">Mengelola konten organik interaktif di Instagram, TikTok, dan platform lain untuk meningkatkan *engagement*.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Content Creation & Copywriting</h4>
+                                <p class="text-sm text-gray-500">Menulis salinan promosi (copy) yang persuasif dan membuat naskah video presentasi untuk pemasaran properti.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Tools -->
+            <div class="mt-12 text-center">
+                <p class="text-sm text-gray-500 font-medium mb-4">TOOLS & PLATFORMS YANG DIKUASAI</p>
+                <div class="flex flex-wrap justify-center items-center gap-6 text-3xl text-gray-400">
+                    <i class="fab fa-meta hover:text-blue-600 transition-colors" title="Meta Business Suite"></i>
+                    <i class="fab fa-google hover:text-red-500 transition-colors" title="Google Ads / Analytics"></i>
+                    <i class="fab fa-instagram hover:text-pink-600 transition-colors" title="Instagram"></i>
+                    <i class="fab fa-tiktok hover:text-black transition-colors" title="TikTok"></i>
+                    <i class="fab fa-whatsapp hover:text-green-500 transition-colors" title="WhatsApp Business"></i>
+                    <div class="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-lg hover:bg-brand-500 hover:text-white transition-colors cursor-pointer shadow-sm">Canva</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pengalaman" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-sm font-bold text-brand-600 uppercase tracking-widest mb-2">Perjalanan Karir</h3>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Pengalaman Kerja Profesional</h2>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-brand-100 ml-3 md:ml-0 md:pl-0">
+                
+                <!-- Experience 1 -->
+                <div class="mb-10 relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute w-4 h-4 bg-brand-500 rounded-full left-[-9px] top-1 border-4 border-white shadow"></div>
+                    <div class="md:flex items-start md:space-x-8">
+                        <div class="md:w-1/3 pt-1 mb-2 md:mb-0 md:text-right relative">
+                            <!-- Mobile timeline dot -->
+                            <div class="md:hidden absolute w-4 h-4 bg-brand-500 rounded-full -left-10 top-1 border-4 border-white shadow"></div>
+                            <span class="text-brand-600 font-bold">2023 - Sekarang</span>
+                            <h4 class="text-gray-900 font-semibold text-lg mt-1">Marcomm & Digital Specialist</h4>
+                            <p class="text-gray-500 text-sm">Perusahaan Developer Properti</p>
+                        </div>
+                        <div class="md:w-2/3 bg-gray-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                            <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                Mengelola keseluruhan strategi komunikasi dari hulu ke hilir untuk proyek residensial. Menjembatani pendekatan pemasaran konvensional dengan akuisisi pelanggan digital.
+                            </p>
+                            <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                                <li>Meluncurkan kampanye iklan digital (Meta) yang berkontribusi pada 40% dari total *leads* bulanan perumahan.</li>
+                                <li>Merancang event *Open House* bulanan terpadu yang mendatangkan lebih dari 100 prospek pengunjung per acara.</li>
+                                <li>Mengawasi produksi seluruh materi kreatif (brosur, billboard, *company profile*, dan video *site plan*).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="mb-10 relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute w-4 h-4 bg-brand-300 rounded-full left-[-9px] top-1 border-4 border-white shadow"></div>
+                    <div class="md:flex items-start md:space-x-8">
+                        <div class="md:w-1/3 pt-1 mb-2 md:mb-0 md:text-right relative">
+                            <!-- Mobile timeline dot -->
+                            <div class="md:hidden absolute w-4 h-4 bg-brand-300 rounded-full -left-10 top-1 border-4 border-white shadow"></div>
+                            <span class="text-brand-600 font-bold">2021 - 2023</span>
+                            <h4 class="text-gray-900 font-semibold text-lg mt-1">Digital Marketing Officer</h4>
+                            <p class="text-gray-500 text-sm">Agensi Pemasaran Digital</p>
+                        </div>
+                        <div class="md:w-2/3 bg-gray-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                            <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                Bertanggung jawab atas pengelolaan aset digital klien dan optimalisasi kampanye konversi penjualan.
+                            </p>
+                            <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                                <li>Meningkatkan *followers* organik media sosial klien rata-rata sebesar 45% dalam setahun.</li>
+                                <li>Mengoptimalkan budget iklan *Cost Per Click* (CPC) dan *Cost Per Lead* (CPL) untuk efisiensi pemasaran.</li>
+                                <li>Menyusun laporan analitik bulanan terkait performa aset digital klien.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-brand-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden max-w-5xl mx-auto border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <!-- Contact Info -->
+                    <div class="bg-brand-600 p-10 lg:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                        <!-- Background decoration -->
+                        <div class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 rounded-full bg-brand-500 opacity-50"></div>
+                        <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-32 h-32 rounded-full bg-brand-700 opacity-50"></div>
+                        
+                        <div class="relative z-10">
+                            <h2 class="text-3xl font-bold mb-4">Mari Berkolaborasi!</h2>
+                            <p class="text-brand-100 mb-8 opacity-90 leading-relaxed">
+                                Membutuhkan ahli strategi komunikasi dan digital untuk proyek properti Anda? Jangan ragu untuk menghubungi saya melalui WhatsApp atau email untuk diskusi lebih lanjut.
+                            </p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center space-x-4 group">
+                                    <div class="w-10 h-10 rounded-full bg-brand-500 group-hover:bg-green-500 flex items-center justify-center flex-shrink-0 transition-colors">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-brand-200">WhatsApp Langsung</p>
+                                        <!-- Direct Link to WA -->
+                                        <a href="https://wa.me/6281234567890?text=Halo%20Dyah,%20saya%20ingin%20berdiskusi%20lebih%20lanjut." target="_blank" class="font-medium hover:text-brand-100">+62 812-3456-7890</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4 group">
+                                    <div class="w-10 h-10 rounded-full bg-brand-500 group-hover:bg-white group-hover:text-brand-600 flex items-center justify-center flex-shrink-0 transition-colors">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-brand-200">Email</p>
+                                        <a href="mailto:dyah.khoyriyah@email.com" class="font-medium hover:text-brand-100">dyah.khoyriyah@email.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-brand-200">Lokasi</p>
+                                        <p class="font-medium">Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 flex space-x-4 relative z-10">
+                            <a href="#" class="w-10 h-10 rounded-full bg-brand-500 hover:bg-white hover:text-brand-600 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-brand-500 hover:bg-white hover:text-brand-600 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form to WhatsApp -->
+                    <div class="p-10 lg:p-12">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Kirim Pesan Cepat</h3>
+                        <p class="text-sm text-gray-500 mb-6">Pesan ini akan otomatis dialihkan ke WhatsApp saya.</p>
+                        
+                        <form id="contact-form" class="space-y-5" onsubmit="event.preventDefault(); sendToWhatsApp();">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="Nama Anda" required>
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Perusahaan / Instansi (Opsional)</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="Nama Perusahaan">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Pesan Anda</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all resize-none" placeholder="Tuliskan tujuan Anda menghubungi saya..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3 px-6 text-white bg-green-500 hover:bg-green-600 rounded-lg font-medium transition-colors duration-300 shadow-md hover:shadow-lg flex justify-center items-center">
+                                <i class="fab fa-whatsapp mr-2 text-xl"></i> Kirim via WhatsApp
+                            </button>
+                        </form>
+                        
+                        <!-- Success Feedback -->
+                        <div id="success-message" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg flex items-center border border-green-200">
+                            <i class="fas fa-spinner fa-spin mr-2 text-green-500"></i>
+                            <p class="text-sm font-medium">Membuka aplikasi WhatsApp Anda...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed bottom-6 right-6 z-50 flex items-center justify-center group cursor-pointer">
+        <!-- Ping effect -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+        <!-- Actual Button -->
+        <a href="https://wa.me/6281234567890?text=Halo%20Dyah,%20saya%20mendapat%20kontak%20Anda%20dari%20website%20CV.%20Bisa%20kita%20berdiskusi?" target="_blank" 
+           class="relative inline-flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+        <!-- Tooltip -->
+        <span class="absolute right-16 bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none shadow-lg">
+            Chat via WhatsApp
+            <span class="absolute top-1/2 -right-1 -mt-1 border-4 border-transparent border-l-gray-900"></span>
+        </span>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <p class="text-2xl font-bold tracking-tighter text-white">Dyah<span class="text-brand-500">.</span></p>
+                <p class="text-gray-400 text-sm mt-1">&copy; 2026 Dyah Khoyriyah. Seluruh Hak Cipta Dilindungi.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#beranda" class="text-gray-400 hover:text-white text-sm transition-colors">Beranda</a>
+                <a href="#tentang" class="text-gray-400 hover:text-white text-sm transition-colors">Tentang</a>
+                <a href="#pengalaman" class="text-gray-400 hover:text-white text-sm transition-colors">Pengalaman</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // WhatsApp Integration Logic
+        function sendToWhatsApp() {
+            // Get form values
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const message = document.getElementById('message').value;
+            
+            // Format WhatsApp Message
+            // IMPORTANT: Replace '6281234567890' with your actual WhatsApp number without (+)
+            const waNumber = "6281234567890"; 
+            
+            let textMessage = `*Halo Dyah, saya ${name}*.\n`;
+            if(company) {
+                textMessage += `Dari: ${company}\n`;
+            }
+            textMessage += `\n*Pesan:*\n${message}\n\n_Pesan ini dikirim dari Website CV._`;
+            
+            // Encode message for URL
+            const encodedText = encodeURIComponent(textMessage);
+            const waUrl = `https://wa.me/${waNumber}?text=${encodedText}`;
+            
+            // Show feedback in UI
+            const successBox = document.getElementById('success-message');
+            successBox.classList.remove('hidden');
+            
+            // Open WA in new tab
+            window.open(waUrl, '_blank');
+            
+            // Reset UI
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+                document.getElementById('contact-form').reset();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
